@@ -1,0 +1,35 @@
+{
+  "title": "Professional Memberships",
+  "content": [
+    {
+      "position": "Fellow",
+      "organization": "American College of Construction Lawyers",
+      "startYear": "2020",
+      "endYear": "present"
+    },
+    {
+      "position": "Member",
+      "organization": "Panel of Construction Arbitrators, American Arbitration Association",
+      "startYear": "2011",
+      "endYear": "present"
+    },
+    {
+      "position": "Chair, Forum on Construction Industry",
+      "organization": "Division + Inclusion Committee, American Bar Association",
+      "startYear": "2020",
+      "endYear": "2023"
+    },
+    {
+      "position": "Governing Committee Member",
+      "organization": "Panel of Construction Arbitrators, American Arbitration Association",
+      "startYear": "2017",
+      "endYear": "2020"
+    },
+    {
+      "position": "Chair, Division 1 (Litigation and Dispute Resolution)",
+      "organization": "Panel of Construction Arbitrators, American Arbitration Association",
+      "startYear": "2014",
+      "endYear": "2016"
+    }
+  ]
+}

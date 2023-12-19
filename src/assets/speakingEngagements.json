@@ -1,0 +1,61 @@
+{
+  "title": "Speaking Engagements",
+  "content": [
+    {
+      "description": "The 2010 Amendments to Rule 26 of the Federal Rules of Civil Procedure",
+      "event": "Annual Meeting of Tennessee Association of Construction Counsel",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "date": "2010"
+    },
+    {
+      "description": "BIM: Addressing the Legal Issues",
+      "event": "____________",
+      "city": "Boston",
+      "state": "Massachusetts",
+      "date": "2010"
+    },
+    {
+      "description": "The Nuts and Bolts of Expert Selection and Observing Ethical Line associated with Preparation and Review of Expert Reports",
+      "event": "Fall Meeting, Forum on Construction Industry, American Bar Association",
+      "city": "Miami",
+      "state": "Florida",
+      "date": "2010"
+    },
+    {
+      "description": "The Role of the Forensic Engineering Expert",
+      "event": "____________",
+      "city": "Park City",
+      "state": "Utah",
+      "date": "2007"
+    },
+    {
+      "description": "The Fundamentals of Construction Contracts",
+      "event": "____________",
+      "city": "Manchester",
+      "state": "New Hampshire",
+      "date": "2007"
+    },
+    {
+      "description": "Construction Delay Claims",
+      "event": "____________",
+      "city": "Londonderry",
+      "state": "New Hampshire",
+      "date": "2005"
+    },
+    {
+      "description": "The Importance of Documentation by The Project Team - A Litigator's Perspective",
+      "event": "____________",
+      "city": "Toronto",
+      "state": "California",
+      "date": "2005"
+    },
+    {
+      "description": "The Role of the Contract in a Successful Construction Project",
+      "event": "____________",
+      "city": "Denver",
+      "state": "Colorado",
+      "date": "2005"
+    }
+  ]
+}

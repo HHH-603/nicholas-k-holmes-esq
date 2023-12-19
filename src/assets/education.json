@@ -1,0 +1,23 @@
+{
+  "title": "",
+  "content": [
+    {
+      "school": "THE UNIVERSITY OF WISCONSIN - MADISON, SCHOOL OF LAW",
+      "city": "Madison",
+      "state": "WI",
+      "degree": "Juris Doctorate",
+      "honors": "with honors",
+      "startYear": "1981",
+      "endYear": "1984"
+    },
+    {
+      "school": "CORNELL UNIVERSITY, COLLEGE OF ARTS AND SCIENCES",
+      "city": "Ithaca",
+      "state": "NY",
+      "degree": "Bachelor of Arts",
+      "honors": "magna cum laude",
+      "startYear": "1977",
+      "endYear": "1981"
+    }
+  ]
+}

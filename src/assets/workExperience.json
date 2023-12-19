@@ -1,0 +1,45 @@
+{
+  "title": "Work Experience",
+  "content": [
+    {
+      "id": 1,
+      "employer": "LAW OFFICE OF NICHOLAS K. HOLMES, PLLC",
+      "startYear": "2023",
+      "endYear": "present",
+      "city": "Concord",
+      "state": "NH"
+    },
+    {
+      "id": 2,
+      "employer": "DEVINE MILLIMET & BRANCH PA",
+      "startYear": "2015",
+      "endYear": "2023",
+      "city": "Manchester",
+      "state": "NH"
+    },
+    {
+      "id": 3,
+      "employer": "NELSON KINDER + MOSSEAU",
+      "startYear": "1996",
+      "endYear": "2015",
+      "city": "Manchester",
+      "state": "NH"
+    },
+    {
+      "id": 4,
+      "employer": "TWOMEY & SISTI LAW OFFICES",
+      "startYear": "1988",
+      "endYear": "1996",
+      "city": "Concord",
+      "state": "NH"
+    },
+    {
+      "id": 5,
+      "employer": "NEW HAMPSHIRE PUBLIC DEFENDER",
+      "startYear": "1984",
+      "endYear": "1988",
+      "city": "Manchester",
+      "state": "NH"
+    }
+  ]
+}
