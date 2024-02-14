@@ -1,211 +1,200 @@
-import * as React from "react";
+import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import workExperience from "../assets/workExperience.json";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import about from "../assets/about.json";
+import experience from "../assets/workExperience.json";
 import representativeCases from "../assets/representativeCases.json";
 import professionalMemberships from "../assets/professionalMemberships.json";
-import speakingEngagements from "../assets/speakingEngagements.json";
 import publications from "../assets/publications.json";
+import speakingEngagements from "../assets/speakingEngagements.json";
 import education from "../assets/education.json";
 
 const IndexPage = () => {
   return (
-    <div className="flex flex-col h-screen w-full items-center">
-      <header className="flex flex-row flex-wrap h-auto w-full">
-        <div className="flex flex-row h-auto w-1/2 pl-8 py-4">
+    <div className="bg-gradient-to-r from-background to-backgroundDark">
+      <Navbar />
+      <div className="flex flex-wrap flex-col mx-auto md:w-1/2 max-w-full max-h-full">
+        <div className="flex flex-wrap flex-col max-w-full max-h-auto md:pt-24 pt-16">
           <StaticImage
-            src="../images/Logo -- Large.png"
-            placeholder="blurred"
-            alt="nh-logo"
-            height={100}
-            width={200}
-            layout="fixed"
-            formats={["auto", "webp"]}
+            src="../images/Holmes-Nicholas-WEB.jpg"
+            className="place-self-center md:w-auto w-full md:border md:border-8 md:border-backgroundDark"
           />
         </div>
-        <section className="flex flex-col flex-wrap h-auto w-1/2 justify-center pr-4 bg-logo">
-          <p className="text-xl font-bold subpixel-antialiased text-right">
-            LAW OFFICE OF NICHOLAS K. HOLMES, PLLC
-          </p>
-          <p className="text-lg font-bold subpixel-antialiased text-right">
-            131 N STATE ST, #7
-          </p>
-          <p className="text-lg font-bold subpixel-antialiased text-right">
-            CONCORD, NH 03301
-          </p>
-          <p className="text-lg font-bold subpixel-antialiased text-right">
-            <a className=" cursor-pointer focus:visible text-blue-800">
-              nick@nb-holmes.com
-            </a>
-          </p>
-          <p className="text-lg font-bold subpixel-antialiased text-right">
-            <a className="focus:visible cursor-pointer text-blue-800">
-              (603) 496-9204
-            </a>
-          </p>
-        </section>
-      </header>
-      <main className="flex flex-col h-auto w-1/2 justify-between">
-        <div className="mt-4 mb-2 flex flex-row h-auto w-full rounded-lg border-8 border-logo bg-logo">
-          <div className="flex flex-col h-auto w-1/2 items-center justify-center pt-4 pb-4 pr-0 pl-4">
-            <StaticImage
-              src="../images/Holmes-Nicholas-WEB.jpg"
-              placeholder="blurred"
-              alt="nicholas-k-holmes-esq"
-              layout="fixed"
-              formats={["auto", "webp"]}
-              className="rounded-lg border-8 bg-background"
-            />
-          </div>
-          <div className="flex flex-col h-auto w-1/2 items-center justify-center pt-4 pb-4 pr-8 pl-0">
-            <p className="text-2xl font-base subpixel-antialiased text-left italic">
-              After forty years as a litigator focusing on large, complex
-              commercial cases including construction disputes, my practice is
-              now exclusively devoted to serving as a neutral, helping parties
-              resolve construction disputes.
-            </p>
-          </div>
-        </div>
-        <section className="rounded-lg border-8 border-log my-2 p-4 bg-logo">
-          <h1 className="font-bold text-6xl subpixel-antialiased text-left">
-            NICHOLAS K. HOLMES, ESQ.
-          </h1>
-          <p className="font-bold text-3xl font-base italic pt-2 subpixel-antialiased text-left">
-            Alternative Dispute Resolution Services
-          </p>
-        </section>
-        <section className="rounded-lg border-8 border-log my-2 p-4 bg-logo">
-          <h2 className="font-bold text-5xl subpixel-antialiase text-left underline underline-offset-4 decoration-4">
-            EXPERIENCE
-          </h2>
-          {workExperience.content.map((data, index) => {
+        <div className="px-4 md:pt-6 pt-4 pb-3">
+          <h1 className="alaised text-3xl font-bold">NICHOLAS K. HOLMES</h1>
+          <h3 className="alaised text-xl font-medium italic">
+            Alternative Dispute Resolution
+          </h3>
+          {about.content.map((data, index) => {
             return (
               <>
-                <p
-                  className="font-base text-lg font-base py-2 text-left"
-                  key={`content_id_${index}`}
-                >
-                  <span className="font-bold text-xl">{data.employer}</span> |{" "}
-                  {data.city}, {data.state}{" "}
-                  <span className="italic">
-                    ({data.startYear} - {data.endYear})
-                  </span>
+                <p className="alaised pt-3" key={`content_id_${index}`}>
+                  {data.about}
                 </p>
               </>
             );
           })}
-        </section>
-        <span className="rounded-lg border-8 border-log my-2 p-4 bg-logo">
-          <h2 className="font-bold text-5xl subpixel-antialiased text-left underline underline-offset-4 decoration-4">
+        </div>
+        <div className="px-4 py-3">
+          <h3
+            id="experience"
+            className="alaised text-2xl font-bold border-b-4 border-black"
+          >
+            EXPERIENCE
+          </h3>
+          {experience.content.map((data, index) => {
+            return (
+              <>
+                <p
+                  className=" text-sm font-light pt-3"
+                  key={`content_id_${index}`}
+                >
+                  {data.startYear} - {data.endYear}
+                </p>
+                <p className="alaised font-medium" key={`content_id_${index}`}>
+                  {data.employer}
+                </p>
+                <p className="alaised text-sm pb-3" key={`content_id_${index}`}>
+                  {data.city}, {data.state}
+                </p>
+              </>
+            );
+          })}
+        </div>
+        <div className="px-4 py-3">
+          <h3
+            id="representativeCases"
+            className="alaised text-2xl font-bold border-b-4 border-black"
+          >
             REPRESENTATIVE CASES
-          </h2>
+          </h3>
           {representativeCases.content.map((data, index) => {
             return (
               <>
                 <p
-                  className="font-base text-lg font-base py-2 text-left"
+                  className="alaised font-medium pt-3"
                   key={`content_id_${index}`}
                 >
-                  <span className="font-bold text-xl">{data.description}</span>{" "}
-                  | {data.venue} - {data.state}
+                  {data.description}
+                </p>
+                <p className="alaised text-sm pb-3" key={`content_id_${index}`}>
+                  {data.venue} | {data.state}
                 </p>
               </>
             );
           })}
-        </span>
-        <section className="rounded-lg border-8 border-log my-2 p-4 bg-logo">
-          <h2 className="font-bold text-5xl subpixel-antialiased text-left underline underline-offset-4 decoration-4">
+        </div>
+        <div className="px-4 py-3">
+          <h3
+            id="professionalMemberships"
+            className="alaised text-2xl font-bold border-b-4 border-black"
+          >
             PROFESSIONAL MEMBERSHIPS
-          </h2>
+          </h3>
           {professionalMemberships.content.map((data, index) => {
             return (
               <>
                 <p
-                  className="font-base text-lg font-base py-2 text-left"
+                  className=" text-sm font-light pt-3"
                   key={`content_id_${index}`}
                 >
-                  <span className="font-bold text-xl">{data.position}</span> |{" "}
-                  {data.organization}{" "}
-                  <span className="italic">
-                    ({data.startYear} - {data.endYear})
-                  </span>
+                  {data.startYear} - {data.endYear}
+                </p>
+                <p className="alaised font-medium" key={`content_id_${index}`}>
+                  {data.organization}
+                </p>
+                <p className="alaised text-sm pb-3">{data.position}</p>
+              </>
+            );
+          })}
+        </div>
+        <div className="px-4 py-3">
+          <h3
+            id="publications"
+            className="alaised text-2xl font-bold border-b-4 border-black"
+          >
+            PUBLICATIONS
+          </h3>
+          {publications.content.map((data, index) => {
+            return (
+              <>
+                <p className="alaised py-3" key={`content_id_${index}`}>
+                  {data.authors}.{" "}
+                  <span className="italic">{data.publication}</span>.{" "}
+                  {data.source}. {data.miscellaneous}.
                 </p>
               </>
             );
           })}
-        </section>
-        <section className="rounded-lg border-8 border-log my-2 p-4 bg-logo">
-          <h2 className="font-bold text-5xl subpixel-antialiased text-left underline underline-offset-4 decoration-4">
-            SELECTED PRESENTATIONS
-          </h2>
+        </div>
+        <div className="px-4 py-3">
+          <h3
+            id="speakingEngagements"
+            className="alaised text-2xl font-bold border-b-4 border-black"
+          >
+            SPEAKING ENGAGEMENTS
+          </h3>
           {speakingEngagements.content.map((data, index) => {
             return (
               <>
                 <p
-                  className="font-base text-lg font-base py-2 text-left"
+                  className=" text-sm font-light pt-3"
                   key={`content_id_${index}`}
                 >
-                  <span className="font-bold text-xl">{data.description}</span>{" "}
-                  | {data.city}, {data.state}{" "}
-                  <span className="italic">({data.date})</span>
+                  {data.date}
+                </p>
+                <p className="alaised font-medium" key={`content_id_${index}`}>
+                  {data.event}
+                </p>
+                <p className="alaised" key={`content_id_${index}`}>
+                  {data.description}
+                </p>
+                <p className="alaised text-sm pb-3" key={`content_id_${index}`}>
+                  {data.city}, {data.state}
                 </p>
               </>
             );
           })}
-        </section>
-        <section className="rounded-lg border-8 border-log my-2 p-4 bg-logo">
-          <h2 className="font-bold text-5xl subpixel-antialiased  text-left underline underline-offset-4 decoration-4">
-            PUBLICATIONS
-          </h2>
-          {publications.content.map((data, index) => {
-            return (
-              <>
-                <p
-                  className="font-base text-xl font-base py-2 text-left"
-                  key={`content_id_${index}`}
-                >
-                  {data.authors}. "{data.publication}."{" "}
-                  <span className="italic">{data.source}</span>.{" "}
-                  {data.miscellaneous}
-                </p>
-              </>
-            );
-          })}
-        </section>
-        <section className="rounded-lg border-8 border-log my-2 p-4 bg-logo">
-          <h2 className="font-bold text-5xl subpixel-antialiased  text-left underline underline-offset-4 decoration-4">
+        </div>
+        <div className="px-4 py-3">
+          <h3
+            id="education"
+            className="alaised text-2xl font-bold border-b-4 border-black"
+          >
             EDUCATION
-          </h2>
+          </h3>
           {education.content.map((data, index) => {
             return (
               <>
                 <p
-                  className="font-base text-lg pt-2 text-left"
+                  className=" text-sm font-light pt-3"
                   key={`content_id_${index}`}
                 >
-                  <span className="text-xl font-bold">{data.school}</span> |{" "}
+                  {data.startYear} - {data.endYear}
+                </p>
+                <p className="alaised font-medium" key={`content_id_${index}`}>
+                  {data.school}
+                </p>
+                <p className="alaised text-sm" key={`content_id_${index}`}>
                   {data.city}, {data.state}
                 </p>
-                <p className="text-lg font-base pl-12 pt-2 pb-4 text-left">
-                  <span className="font-bold">{data.degree}</span>,{" "}
-                  {data.honors}{" "}
-                  <span className="italic">(Class of {data.endYear})</span>
+                <p
+                  className="alaised text-sm italic pb-3 last:pb-1"
+                  key={`content_id_${index}`}
+                >
+                  {data.degree}, {data.honors}
                 </p>
               </>
             );
           })}
-        </section>
-        <footer className="flex flex-row flex-wrap h-auto w-full">
-          <section className="flex flex-ROW flex-wrap h-auto w-full justify-center pr-4">
-            <p className="text-xl font-bold subpixel-antialiased">
-              LAW OFFICE OF NICHOLAS K. HOLMES, PLLC
-            </p>
-          </section>
-        </footer>
-      </main>
+        </div>{" "}
+        <Footer />
+      </div>
     </div>
   );
 };
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Your Website Title</title>;

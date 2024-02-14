@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `nicholas-k-holmes-esq`,
+    title: `gatsby`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
