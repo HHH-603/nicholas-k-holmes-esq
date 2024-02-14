@@ -23,7 +23,7 @@ const IndexPage = () => {
         </div>
         <div className="px-4 md:pt-6 pt-4 pb-3">
           <h1 className="alaised text-3xl font-bold">NICHOLAS K. HOLMES</h1>
-          <h3 className="alaised text-xl font-medium italic">
+          <h3 className="alaised text-xl font-medium">
             Alternative Dispute Resolution
           </h3>
           {about.content.map((data, index) => {
@@ -147,7 +147,7 @@ const IndexPage = () => {
                 <p className="alaised font-medium" key={`content_id_${index}`}>
                   {data.event}
                 </p>
-                <p className="alaised" key={`content_id_${index}`}>
+                <p className="alaised italic" key={`content_id_${index}`}>
                   {data.description}
                 </p>
                 <p className="alaised text-sm pb-3" key={`content_id_${index}`}>
@@ -197,4 +197,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Your Website Title</title>;
+export const Head = () => <title>Law Office of Nicholas K. Holmes, PLLC</title>;

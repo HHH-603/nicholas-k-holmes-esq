@@ -2,5 +2,5 @@ node_modules/
 .cache/
 public
 
-Nuxt generate
-dist
+# Local Netlify folder
+.netlify
