@@ -32,9 +32,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-background py-3 fixed justify-items-center content-center w-full h-fit transition-all duration-300 z-50 ${
+      className={`bg-background py-3 fixed w-full z-50 ${
         isSticky ? "top-0" : "-top-20"
-      }`}
+      } transition-all duration-300`}
     >
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="flex-shrink-0">
@@ -51,14 +51,14 @@ const Navbar = () => {
           <div className="ml-10 flex items-baseline space-x-4">
             <Link
               to="tel:16034961181"
-              className="alaised text-center pl-0 pr-3 py-2 rounded-md text-sm font-medium"
+              className="alaised text-center px-3 py-2 rounded-md text-sm font-medium"
               onClick={closeMenu}
             >
               Call
             </Link>
             <Link
               to="mailto:nholmes@nb-holmes.com"
-              className="alaised text-center pl-0 pr-3 py-2 rounded-md text-sm font-medium"
+              className="alaised text-center px-3 py-2 rounded-md text-sm font-medium"
               onClick={closeMenu}
             >
               Email
@@ -72,16 +72,10 @@ const Navbar = () => {
             aria-expanded="false"
           >
             <span className="sr-only">Open main menu</span>
-            <div className="hamburger">
-              <div
-                className={`hamburger-line ${isMenuOpen ? "active" : ""}`}
-              ></div>
-              <div
-                className={`hamburger-line ${isMenuOpen ? "active" : ""}`}
-              ></div>
-              <div
-                className={`hamburger-line ${isMenuOpen ? "active" : ""}`}
-              ></div>
+            <div className={`hamburger ${isMenuOpen ? "active" : ""}`}>
+              <div className="hamburger-line"></div>
+              <div className="hamburger-line"></div>
+              <div className="hamburger-line"></div>
             </div>
           </button>
         </div>
