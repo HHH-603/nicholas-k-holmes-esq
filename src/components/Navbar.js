@@ -97,42 +97,42 @@ const Navbar = () => {
           className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
           onClick={closeMenu}
         >
-          Experience
+          EXPERIENCE
         </Link>
         <Link
           to="#representativeCases"
           className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
           onClick={closeMenu}
         >
-          Representative Cases
+          REPRESENTATIVE CASES
         </Link>
         <Link
           to="#professionalMemberships"
           className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
           onClick={closeMenu}
         >
-          Professional Memberships
+          PROFESSIONAL MEMBERSHIPS
         </Link>
         <Link
           to="#publications"
           className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
           onClick={closeMenu}
         >
-          Publications
+          PUBLICATIONS
         </Link>
         <Link
           to="#speakingEngagements"
           className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
           onClick={closeMenu}
         >
-          Speaking Engagements
+          SPEAKING ENGAGEMENTS
         </Link>
         <Link
           to="#education"
           className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
           onClick={closeMenu}
         >
-          Education
+          EDUCATION
         </Link>
         {/* Add more links as needed */}
       </div>
