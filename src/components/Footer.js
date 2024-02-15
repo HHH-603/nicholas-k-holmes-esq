@@ -8,7 +8,7 @@ const Footer = () => {
       <p className="font-medium">Law Office of Nicholas K. Holmes, PLLC</p>
       <p className="text-sm font-medium">
         <a href="tel:16034969204" target="_blank">
-          (603) 496-1181
+          (603) 496-9204
         </a>{" "}
         |{" "}
         <a href="mailto:nholmes@nb-holmes.com" target="_blank">
