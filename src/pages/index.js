@@ -26,7 +26,7 @@ const IndexPage = () => {
             className="w-full md:w-auto md:border-8 md:border-backgroundDark place-self-center"
           />
         </div>
-        <div className="px-4 pt-4 pb-3">
+        <div className="md:px-0 px-4 pt-4 pb-3">
           <h1 className="text-3xl font-bold alaised">NICHOLAS K. HOLMES</h1>
           <h3 className="text-xl font-medium alaised">
             Alternative Dispute Resolution
@@ -39,7 +39,7 @@ const IndexPage = () => {
         </div>
         {/* Other sections */}
         {/* Experience */}
-        <div className="px-4 py-3">
+        <div className="md:px-0 px-4 py-3">
           <h3
             id="experience"
             className="text-2xl font-bold alaised border-b-4 border-black"
@@ -61,7 +61,7 @@ const IndexPage = () => {
           ))}
         </div>
         {/* Representative Cases */}
-        <div className="px-4 py-3">
+        <div className="md:px-0 px-4 py-3">
           <h3
             id="representativeCases"
             className="text-2xl font-bold alaised border-b-4 border-black"
@@ -78,7 +78,7 @@ const IndexPage = () => {
           ))}
         </div>
         {/* Professional Memberships */}
-        <div className="px-4 py-3">
+        <div className="md:px-0 px-4 py-3">
           <h3
             id="professionalMemberships"
             className="text-2xl font-bold alaised border-b-4 border-black"
@@ -98,7 +98,7 @@ const IndexPage = () => {
           ))}
         </div>
         {/* Publications */}
-        <div className="px-4 py-3">
+        <div className="md:px-0 px-4 py-3">
           <h3
             id="publications"
             className="text-2xl font-bold alaised border-b-4 border-black"
@@ -113,7 +113,7 @@ const IndexPage = () => {
           ))}
         </div>
         {/* Speaking Engagements */}
-        <div className="px-4 py-3">
+        <div className="md:px-0 px-4 py-3">
           <h3
             id="speakingEngagements"
             className="text-2xl font-bold alaised border-b-4 border-black"
@@ -136,7 +136,7 @@ const IndexPage = () => {
           ))}
         </div>
         {/* Education */}
-        <div className="px-4 py-3">
+        <div className="md:px-0 px-4 py-3">
           <h3
             id="education"
             className="text-2xl font-bold alaised border-b-4 border-black"
