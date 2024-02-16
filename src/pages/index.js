@@ -9,6 +9,7 @@ import professionalMemberships from "../assets/professionalMemberships.json";
 import publications from "../assets/publications.json";
 import speakingEngagements from "../assets/speakingEngagements.json";
 import education from "../assets/education.json";
+import "../styles/global.css";
 
 const IndexPage = () => {
   useEffect(() => {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
+import "../styles/global.css";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(true);
@@ -75,12 +76,18 @@ const Navbar = () => {
             aria-expanded="false"
           >
             <span className="sr-only">Open main menu</span>
-            <div className={`hamburger ${isMenuOpen ? "active" : ""}`}>
-              <div className="hamburger-line"></div>
-              <div className="hamburger-line"></div>
-              <div className="hamburger-line"></div>
+            <div className="hamburger">
+              <div
+                className={`hamburger-line ${isMenuOpen ? "active" : ""}`}
+              ></div>
+              <div
+                className={`hamburger-line ${isMenuOpen ? "active" : ""}`}
+              ></div>
+              <div
+                className={`hamburger-line ${isMenuOpen ? "active" : ""}`}
+              ></div>
             </div>
-          </button>
+          </button>{" "}
         </div>
       </div>
 
