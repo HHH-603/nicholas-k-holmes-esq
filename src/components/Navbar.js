@@ -46,8 +46,7 @@ const Navbar = () => {
             <StaticImage
               src="../images/Logo -- Small.png"
               alt="Logo"
-              height={40}
-              width={60}
+              class="max-h-12 max-w-24"
             />
           </a>
         </div>
@@ -55,14 +54,14 @@ const Navbar = () => {
           <div className="ml-10 flex items-baseline space-x-4">
             <Link
               to="tel:16034961181"
-              className="alaised text-center px-3 py-2 rounded-md text-sm font-medium"
+              className="alaised text-center px-3 py-2 text-sm font-medium"
               onClick={closeMenu}
             >
               Call
             </Link>
             <Link
               to="mailto:nholmes@nb-holmes.com"
-              className="alaised text-center px-3 py-2 rounded-md text-sm font-medium"
+              className="alaised text-center px-3 py-2 text-sm font-medium"
               onClick={closeMenu}
             >
               Email
@@ -91,49 +90,45 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div
-        className={`${
-          isMenuOpen ? "block bg-background opacity-75 z-50" : "hidden"
-        } md:hidden`}
-      >
+      <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden`}>
         <Link
           to="#experience"
-          className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
+          className="alaised text-center block px-3 py-2 text-base font-medium"
           onClick={closeMenu}
         >
           EXPERIENCE
         </Link>
         <Link
           to="#representativeCases"
-          className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
+          className="alaised text-center block px-3 py-2 text-base font-medium"
           onClick={closeMenu}
         >
           REPRESENTATIVE CASES
         </Link>
         <Link
           to="#professionalMemberships"
-          className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
+          className="alaised text-center block px-3 py-2 text-base font-medium"
           onClick={closeMenu}
         >
           PROFESSIONAL MEMBERSHIPS
         </Link>
         <Link
           to="#publications"
-          className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
+          className="alaised text-center block px-3 py-2 text-base font-medium"
           onClick={closeMenu}
         >
           PUBLICATIONS
         </Link>
         <Link
           to="#speakingEngagements"
-          className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
+          className="alaised text-center block px-3 py-2 text-base font-medium"
           onClick={closeMenu}
         >
           SPEAKING ENGAGEMENTS
         </Link>
         <Link
           to="#education"
-          className="alaised text-center block px-3 py-2 rounded-md text-base font-medium"
+          className="alaised text-center block px-3 py-2 text-base font-medium"
           onClick={closeMenu}
         >
           EDUCATION
