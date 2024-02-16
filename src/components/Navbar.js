@@ -38,14 +38,17 @@ const Navbar = () => {
     >
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="flex-shrink-0">
-          <Link to="/" className="font-semibold text-xl">
+          <a
+            href="https://nkh-jd-bmf.netlify.app/"
+            className="font-semibold text-xl"
+          >
             <StaticImage
               src="../images/Logo -- Small.png"
               alt="Logo"
               height={40}
               width={60}
             />
-          </Link>
+          </a>
         </div>
         <div className="hidden md:block">
           <div className="ml-10 flex items-baseline space-x-4">
