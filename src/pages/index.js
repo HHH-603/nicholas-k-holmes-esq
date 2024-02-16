@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -11,6 +11,10 @@ import speakingEngagements from "../assets/speakingEngagements.json";
 import education from "../assets/education.json";
 
 const IndexPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-gradient-to-r from-background to-backgroundDark">
       <Navbar />
