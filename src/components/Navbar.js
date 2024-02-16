@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <div className="ml-10 flex items-baseline space-x-4">
             <Link
-              to="tel:16034961181"
+              to="tel:16034969204"
               className="alaised text-center px-3 py-2 text-sm font-medium"
               onClick={closeMenu}
             >
