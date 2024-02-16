@@ -27,7 +27,7 @@ const IndexPage = () => {
           />
         </div>
         <div className="md:px-0 px-4 pt-4 pb-3">
-          <h1 className="text-3xl font-bold alaised">NICHOLAS K. HOLMES</h1>
+          <h1 className="text-5xl font-bold alaised">NICHOLAS K. HOLMES</h1>
           <h3 className="text-xl font-medium alaised">
             Alternative Dispute Resolution
           </h3>
@@ -42,7 +42,7 @@ const IndexPage = () => {
         <div className="md:px-0 px-4 py-3">
           <h3
             id="experience"
-            className="text-2xl font-bold alaised border-b-4 border-black"
+            className="text-4xl font-bold alaised border-b-4 border-black"
           >
             EXPERIENCE
           </h3>
@@ -64,7 +64,7 @@ const IndexPage = () => {
         <div className="md:px-0 px-4 py-3">
           <h3
             id="representativeCases"
-            className="text-2xl font-bold alaised border-b-4 border-black"
+            className="text-4xl font-bold alaised border-b-4 border-black"
           >
             REPRESENTATIVE CASES
           </h3>
@@ -81,7 +81,7 @@ const IndexPage = () => {
         <div className="md:px-0 px-4 py-3">
           <h3
             id="professionalMemberships"
-            className="text-2xl font-bold alaised border-b-4 border-black"
+            className="text-4xl font-bold alaised border-b-4 border-black"
           >
             PROFESSIONAL MEMBERSHIPS
           </h3>
@@ -101,7 +101,7 @@ const IndexPage = () => {
         <div className="md:px-0 px-4 py-3">
           <h3
             id="publications"
-            className="text-2xl font-bold alaised border-b-4 border-black"
+            className="text-4xl font-bold alaised border-b-4 border-black"
           >
             PUBLICATIONS
           </h3>
@@ -116,7 +116,7 @@ const IndexPage = () => {
         <div className="md:px-0 px-4 py-3">
           <h3
             id="speakingEngagements"
-            className="text-2xl font-bold alaised border-b-4 border-black"
+            className="text-4xl font-bold alaised border-b-4 border-black"
           >
             SPEAKING ENGAGEMENTS
           </h3>
@@ -139,7 +139,7 @@ const IndexPage = () => {
         <div className="md:px-0 px-4 py-3">
           <h3
             id="education"
-            className="text-2xl font-bold alaised border-b-4 border-black"
+            className="text-4xl font-bold alaised border-b-4 border-black"
           >
             EDUCATION
           </h3>
