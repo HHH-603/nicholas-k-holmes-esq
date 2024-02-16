@@ -93,7 +93,7 @@ const Navbar = () => {
       <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden`}>
         <Link
           to="#experience"
-          className="alaised text-center block px-3 py-2 text-babase font-semibold"
+          className="alaised text-center block px-3 py-2 first:pt-4 first:pb-2 text-babase font-semibold"
           onClick={closeMenu}
         >
           EXPERIENCE
