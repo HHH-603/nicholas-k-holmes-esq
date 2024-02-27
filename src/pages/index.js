@@ -17,66 +17,64 @@ const IndexPage = () => {
 
   return (
     <div className="flex flex-col w-full h-full items-center leading-8 bg-gradient-to-r from-background to-backgroundDark">
-      <header className="text-center flex flex-col items-center justify-center w-screen h-screen px-2 text-black bg-background">
-        {/* Static Image */}
-        <div className="flex-none">
-          <StaticImage
-            src="../images/static-image.jpg"
-            alt="Static Image"
-            className="object-contain h-48 w-full"
-          />
-        </div>
-
-        {/* Text Content */}
-        <div className="flex-auto w-full flex flex-col justify-center items-center">
-          <div className="flex flex-col items-center items-center justify-center pb-8">
-            <StaticImage
-              src="../images/Logo -- Small.png"
-              alt="logo"
-              placeholder=""
-              className="md:w-full w-5/6"
-              blurUpDelay=""
-              quality={100}
-              loading="eager"
-              objectFit=""
-              layout="constrained"
-            />
-          </div>
-          <h1 className="antialaised text-4xl font-bold">
-            Law Office of Nicholas K. Holmes, PLLC
-          </h1>
-          <p className="antialaised text-lg">Alternative Dispute Resolution</p>
-          <p className="antialaised">Concord, New Hampshire</p>
-          <div id="container_header-links" className="flex flex-row space-x-2">
-            <a
-              href="/"
-              className="antialaised border-b-2 border-dotted hover:border-solid border-black"
+      <header className="text-center flex flex-col items-center justify-start w-screen h-screen px-2 text-black bg-background">
+        <div className="flex flex-col w-full h-9/10 justify-start">
+          {/* Text Content */}
+          <div className="flex-auto w-full flex flex-col justify-center items-center">
+            <div className="flex flex-col items-center items-center justify-center pb-8">
+              <StaticImage
+                src="../images/Logo -- Small.png"
+                alt="logo"
+                placeholder=""
+                className="md:w-full w-5/6"
+                blurUpDelay=""
+                quality={100}
+                loading="eager"
+                objectFit=""
+                layout="constrained"
+              />
+            </div>
+            <h1 className="antialaised text-4xl font-bold">
+              Law Office of Nicholas K. Holmes, PLLC
+            </h1>
+            <p className="antialaised text-lg">
+              Alternative Dispute Resolution
+            </p>
+            <p className="antialaised">Concord, New Hampshire</p>
+            <div
+              id="container_header-links"
+              className="flex flex-row space-x-2"
             >
-              Call
-            </a>
-            <a
-              href="/"
-              className="antialaised border-b-2 border-dotted hover:border-solid border-black"
-            >
-              Email
-            </a>
+              <a
+                href="/"
+                className="antialaised border-b-2 border-dotted hover:border-solid border-black"
+              >
+                Call
+              </a>
+              <a
+                href="/"
+                className="antialaised border-b-2 border-dotted hover:border-solid border-black"
+              >
+                Email
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col items-center justify center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="animate-bounce"
-          >
-            <path d="M6 9l6 6 6-6" />
-          </svg>
+          <div className="flex flex-col items-center justify-bottom">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="animate-bounce"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </div>
         </div>
       </header>
       <div className="flex flex-col items-center items-center justify-center md:py-8 md:w-fit w-screen">

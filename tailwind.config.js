@@ -10,6 +10,9 @@ module.exports = {
         background: "#e6e6e6",
         backgroundDark: "#C2C2C2",
       },
+      height: {
+        "9/10": "90%",
+      },
     },
   },
   plugins: [],
