@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import * as React from "react";
+import { useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import about from "../assets/about.json";
 import experience from "../assets/workExperience.json";
 import representativeCases from "../assets/representativeCases.json";
@@ -9,7 +8,7 @@ import professionalMemberships from "../assets/professionalMemberships.json";
 import publications from "../assets/publications.json";
 import speakingEngagements from "../assets/speakingEngagements.json";
 import education from "../assets/education.json";
-import "../styles/global.css";
+import { Link } from "gatsby";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -17,154 +16,200 @@ const IndexPage = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-background to-backgroundDark">
-      <Navbar />
-      <div className="mx-auto flex flex-wrap flex-col md:w-1/2 max-w-full">
-        <div className="flex flex-col max-w-full pt-16 md:pt-24">
+    <div className="flex flex-col w-full h-full items-center leading-8 bg-gradient-to-r from-background to-backgroundDark">
+      <header className="text-center flex flex-col items-center justify-center w-screen h-screen px-2 text-black bg-background">
+        {/* Static Image */}
+        <div className="flex-none">
           <StaticImage
-            src="../images/Holmes-Nicholas-WEB.jpg"
-            className="w-full md:w-auto md:border-8 md:border-backgroundDark place-self-center"
+            src="../images/static-image.jpg"
+            alt="Static Image"
+            className="object-contain h-48 w-full"
           />
         </div>
-        <div className="md:px-0 px-4 pt-4 pb-3">
-          <h1 className="text-5xl font-bold alaised">NICHOLAS K. HOLMES</h1>
-          <h3 className="text-xl font-medium alaised">
-            Alternative Dispute Resolution
-          </h3>
+
+        {/* Text Content */}
+        <div className="flex-auto w-full flex flex-col justify-center items-center">
+          <div className="flex flex-col items-center items-center justify-center pb-8">
+            <StaticImage
+              src="../images/Logo -- Small.png"
+              alt="logo"
+              placeholder=""
+              className="md:w-full w-5/6"
+              blurUpDelay=""
+              quality={100}
+              loading="eager"
+              objectFit=""
+              layout="constrained"
+            />
+          </div>
+          <h1 className="antialaised text-4xl font-bold">
+            Law Office of Nicholas K. Holmes, PLLC
+          </h1>
+          <p className="antialaised text-lg">Alternative Dispute Resolution</p>
+          <p className="antialaised">Concord, New Hampshire</p>
+          <div id="container_header-links" className="flex flex-row space-x-2">
+            <a
+              href="/"
+              className="antialaised border-b-2 border-dotted hover:border-solid border-black"
+            >
+              Call
+            </a>
+            <a
+              href="/"
+              className="antialaised border-b-2 border-dotted hover:border-solid border-black"
+            >
+              Email
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="animate-bounce"
+          >
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
+      </header>
+      <div className="flex flex-col items-center items-center justify-center md:py-8 md:w-fit w-screen">
+        <StaticImage
+          src="../images/Holmes-Nicholas-WEB.jpg"
+          alt="dad"
+          placeholder=""
+          className="md:w-full w-screen md:border-8 md:border-backgroundDark"
+          blurUpDelay=""
+          quality={100}
+          loading="eager"
+          objectFit=""
+          layout="constrained"
+        />
+      </div>
+      <main className="flex flex-col lg:w-1/3 md:w-1/2 w-full px-2">
+        <section className="flex flex-col w-full h-auto">
           {about.content.map((data, index) => (
-            <p className="pt-3 alaised" key={`content_id_${index}`}>
-              {data.about}
+            <p
+              className="antialaised md:pt-0 pt-4 pb-4 italic"
+              key={`content_id_${index}`}
+            >
+              {data.about}.
             </p>
           ))}
-        </div>
-        {/* Other sections */}
-        {/* Experience */}
-        <div className="md:px-0 px-4 py-3">
-          <h3
-            id="experience"
-            className="text-4xl font-bold alaised border-b-4 border-black"
-          >
-            EXPERIENCE
+        </section>
+        <section className="flex flex-col w-full h-auto py-4">
+          <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
+            Experience
           </h3>
           {experience.content.map((data, index) => (
-            <React.Fragment key={`content_id_${index}`}>
-              <p className="pt-3 text-sm font-light alaised">
+            <section id="card_asset-details" key={`content_id_${index}`}>
+              <p className="antialaised">
                 {data.startYear} - {data.endYear}
               </p>
-              <p className="font-medium alaised" key={`content_id_${index}`}>
-                {data.employer}
-              </p>
-              <p className="pb-3 text-sm alaised" key={`content_id_${index}`}>
+              <p className="antialaised">{data.employer}</p>
+              <p className="antialaised pb-4">
                 {data.city}, {data.state}
               </p>
-            </React.Fragment>
+            </section>
           ))}
-        </div>
-        {/* Representative Cases */}
-        <div className="md:px-0 px-4 py-3">
-          <h3
-            id="representativeCases"
-            className="text-4xl font-bold alaised border-b-4 border-black"
-          >
-            REPRESENTATIVE CASES
+        </section>
+        <section className="flex flex-col w-full h-auto py-4">
+          <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
+            Representative Cases
           </h3>
           {representativeCases.content.map((data, index) => (
-            <React.Fragment key={`content_id_${index}`}>
-              <p className="pt-3 font-medium alaised">{data.description}</p>
-              <p className="pb-3 text-sm alaised" key={`content_id_${index}`}>
+            <section id="card_asset-details" key={`content_id_${index}`}>
+              <p className="antialaised">{data.description}</p>
+              <p className="antialaised">{data.employer}</p>
+              <p className="antialaised pb-4">
                 {data.venue} | {data.state}
               </p>
-            </React.Fragment>
+            </section>
           ))}
-        </div>
-        {/* Professional Memberships */}
-        <div className="md:px-0 px-4 py-3">
-          <h3
-            id="professionalMemberships"
-            className="text-4xl font-bold alaised border-b-4 border-black"
-          >
-            PROFESSIONAL MEMBERSHIPS
+        </section>
+        <section className="flex flex-col w-full h-auto py-4">
+          <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
+            Professional Memberships
           </h3>
           {professionalMemberships.content.map((data, index) => (
-            <React.Fragment key={`content_id_${index}`}>
-              <p className="pt-3 text-sm font-light alaised">
+            <section id="card_asset-details" key={`content_id_${index}`}>
+              <p className="antialaised">
                 {data.startYear} - {data.endYear}
               </p>
-              <p className="font-medium alaised" key={`content_id_${index}`}>
-                {data.organization}
+              <p className="antialaised">
+                {data.position} | {data.organization}
               </p>
-              <p className="pb-3 text-sm alaised">{data.position}</p>
-            </React.Fragment>
+            </section>
           ))}
-        </div>
-        {/* Publications */}
-        <div className="md:px-0 px-4 py-3">
-          <h3
-            id="publications"
-            className="text-4xl font-bold alaised border-b-4 border-black"
-          >
-            PUBLICATIONS
+        </section>
+        <section className="flex flex-col w-full h-auto py-4">
+          <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
+            Publications
           </h3>
           {publications.content.map((data, index) => (
-            <p className="py-3 alaised" key={`content_id_${index}`}>
-              {data.authors}. <span className="italic">{data.publication}</span>
-              . {data.source}. {data.miscellaneous}.
-            </p>
+            <section id="card_asset-details" key={`content_id_${index}`}>
+              <p className="antialaised">
+                {data.authors}.{" "}
+                <span className="italic">{data.publication}</span>.{" "}
+                {data.source}. {data.miscellaneous}.
+              </p>
+            </section>
           ))}
-        </div>
-        {/* Speaking Engagements */}
-        <div className="md:px-0 px-4 py-3">
-          <h3
-            id="speakingEngagements"
-            className="text-4xl font-bold alaised border-b-4 border-black"
-          >
-            SPEAKING ENGAGEMENTS
+        </section>
+        <section className="flex flex-col w-full h-auto py-4">
+          <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
+            Speaking Engagements
           </h3>
           {speakingEngagements.content.map((data, index) => (
-            <React.Fragment key={`content_id_${index}`}>
-              <p className="pt-3 text-sm font-light alaised">{data.date}</p>
-              <p className="font-medium alaised" key={`content_id_${index}`}>
-                {data.event}
-              </p>
-              <p className="italic alaised" key={`content_id_${index}`}>
-                {data.description}
-              </p>
-              <p className="pb-3 text-sm alaised" key={`content_id_${index}`}>
+            <section id="card_asset-details" key={`content_id_${index}`}>
+              <p className="antialaised">{data.date}</p>
+              <p className="antialaised">{data.event}</p>
+              <p className="antialaised">{data.description}</p>
+              <p className="antialaised">
                 {data.city}, {data.state}
               </p>
-            </React.Fragment>
+            </section>
           ))}
-        </div>
-        {/* Education */}
-        <div className="md:px-0 px-4 py-3">
-          <h3
-            id="education"
-            className="text-4xl font-bold alaised border-b-4 border-black"
-          >
-            EDUCATION
+        </section>
+        <section className="flex flex-col w-full h-auto py-4">
+          <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
+            Education
           </h3>
           {education.content.map((data, index) => (
-            <React.Fragment key={`content_id_${index}`}>
-              <p className="pt-3 text-sm font-light alaised">
+            <section id="card_asset-details" key={`content_id_${index}`}>
+              <p className="antialaised">
                 {data.startYear} - {data.endYear}
               </p>
-              <p className="font-medium alaised" key={`content_id_${index}`}>
-                {data.school}
-              </p>
-              <p className="alaised text-sm" key={`content_id_${index}`}>
+              <p className="antialaised">{data.university}</p>
+              <p className="antialaised">{data.school}</p>
+              <p className="antialaised">{data.degree}</p>
+              <p className="antialaised">{data.honors}</p>
+              <p className="antialaised pb-4">
                 {data.city}, {data.state}
               </p>
-              <p
-                className="pb-1 text-sm italic alaised"
-                key={`content_id_${index}`}
-              >
-                {data.degree}, {data.honors}
-              </p>
-            </React.Fragment>
+            </section>
           ))}
-        </div>{" "}
-        <Footer />
-      </div>
+        </section>
+      </main>
+      <footer className="flex flex-col w-full h-fit items-center justify-center text-background bg-black pt-2 pb-4">
+        <p className="antialaised text-lg font-semibold">
+          Law Office of Nicholas K. Holmes, PLLC
+        </p>
+        <p className="antialaised border-b-2 border-dotted hover:border-solid border-background">
+          <a href="tel:+16034969204">(603) 496-9204</a>
+        </p>
+        <p className="antialaised border-b-2 border-dotted hover:border-solid border-background">
+          <a href="mailto:nholmes@nb-holmes.com" target="_blank">
+            nholmes@nb-holmes.com
+          </a>
+        </p>
+      </footer>
     </div>
   );
 };
