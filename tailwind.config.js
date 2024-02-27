@@ -11,7 +11,7 @@ module.exports = {
         backgroundDark: "#C2C2C2",
       },
       height: {
-        "86%": "86%",
+        "88%": "88%",
       },
     },
   },
