@@ -18,7 +18,7 @@ const IndexPage = () => {
   return (
     <div className="flex flex-col w-full h-full items-center leading-8 bg-gradient-to-r from-background to-backgroundDark">
       <header className="text-center flex flex-col items-center justify-start w-screen h-screen px-2 text-black bg-background">
-        <div className="flex flex-col w-full h-9/10 justify-start">
+        <div className="flex flex-col w-full h-86% justify-start">
           {/* Text Content */}
           <div className="flex-auto w-full flex flex-col justify-center items-center">
             <div className="flex flex-col items-center items-center justify-center pb-8">
