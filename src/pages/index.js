@@ -35,10 +35,9 @@ const IndexPage = () => {
               />
             </div>
             <h1 className="antialaised text-4xl font-bold">
-              Law Office of Nicholas K. Holmes, PLLC
-            </h1>
+LAW OFFICE OF NICHOLAS K. HOLMES, PLLC            </h1>
             <p className="antialaised text-lg">
-              Alternative Dispute Resolution
+              ALTERNATIVE DISPUTE RESOLUTION
             </p>
             <p className="antialaised">Concord, New Hampshire</p>
             <div
@@ -103,7 +102,7 @@ const IndexPage = () => {
         </section>
         <section className="flex flex-col w-full h-auto py-4">
           <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
-            Experience
+            EXPERIENCE
           </h3>
           {experience.content.map((data, index) => (
             <section id="card_asset-details" key={`content_id_${index}`}>
@@ -119,7 +118,7 @@ const IndexPage = () => {
         </section>
         <section className="flex flex-col w-full h-auto py-4">
           <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
-            Representative Cases
+            REPRESENTATIVE CASES
           </h3>
           {representativeCases.content.map((data, index) => (
             <section id="card_asset-details" key={`content_id_${index}`}>
@@ -133,7 +132,7 @@ const IndexPage = () => {
         </section>
         <section className="flex flex-col w-full h-auto py-4">
           <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
-            Professional Memberships
+            PROFESSIONAL MEMBERSHIPS
           </h3>
           {professionalMemberships.content.map((data, index) => (
             <section id="card_asset-details" key={`content_id_${index}`}>
@@ -148,7 +147,7 @@ const IndexPage = () => {
         </section>
         <section className="flex flex-col w-full h-auto py-4">
           <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
-            Publications
+            PUBLICATIONS
           </h3>
           {publications.content.map((data, index) => (
             <section id="card_asset-details" key={`content_id_${index}`}>
@@ -162,7 +161,7 @@ const IndexPage = () => {
         </section>
         <section className="flex flex-col w-full h-auto py-4">
           <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
-            Speaking Engagements
+            SPEAKING ENGAGEMENTS
           </h3>
           {speakingEngagements.content.map((data, index) => (
             <section id="card_asset-details" key={`content_id_${index}`}>
@@ -177,7 +176,7 @@ const IndexPage = () => {
         </section>
         <section className="flex flex-col w-full h-auto py-4">
           <h3 className="text-2xl font-bold antialaised border-b-2 border-solid border-black">
-            Education
+            EDUCATION
           </h3>
           {education.content.map((data, index) => (
             <section id="card_asset-details" key={`content_id_${index}`}>
@@ -197,7 +196,7 @@ const IndexPage = () => {
       </main>
       <footer className="flex flex-col w-full h-fit items-center justify-center text-background bg-black pt-2 pb-4">
         <p className="antialaised text-lg font-semibold">
-          Law Office of Nicholas K. Holmes, PLLC
+          LAW OFFICE OF NICHOLAS K. HOLMES, PLLC
         </p>
         <p className="antialaised border-b-2 border-dotted hover:border-solid border-background">
           <a href="tel:+16034969204">(603) 496-9204</a>
